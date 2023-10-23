@@ -115,6 +115,8 @@ public interface InterfazGestion {
     }
 
     public static void borrar(int id){
+        //TODO borrar del escritorio
+
 
         Connection conexion = ConexionBD.conectar();
 
