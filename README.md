@@ -1,0 +1,1 @@
+Esto es un programa que consulta una base de datos y trabajo con minio para sincronizarse y crear instalaciones. Permite crearlas, revisarlas, marcarlas y subirlas a MINIO.
