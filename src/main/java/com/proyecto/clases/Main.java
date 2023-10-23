@@ -12,6 +12,8 @@ import java.sql.Statement;
 
 public class Main {
     public static void main(String[] args) throws ServerException, InsufficientDataException, ErrorResponseException, IOException, NoSuchAlgorithmException, InvalidKeyException, InvalidResponseException, XmlParserException, InternalException {
+        //PRUEBAS
+
         //Consulta c = new Consulta();
         //c.consultaPais();
         //c.imprimirPaises2(c.getPaises());

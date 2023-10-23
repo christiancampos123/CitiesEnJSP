@@ -46,7 +46,7 @@ public class Minio {
 
 
     public static void borrarArchivoDeMinio(String nombreArchivo) {
-        //recordar que le tienes ue pasar nomrbe de archivo.txt
+        //recordar que le tienes que pasar nomrbe de archivo.txt
         try {
             String endpoint = "http://192.168.1.234:9000";
             String accessKey = "ROOTNAME";

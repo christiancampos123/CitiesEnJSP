@@ -12,7 +12,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.PreparedStatement;
-import java.util.ArrayList;
 import java.util.List;
 
 
@@ -254,7 +253,7 @@ public interface InterfazGestion {
 
     }
 
-    public static int espacio(int id) { //Done mira el espacio que ocupa cierto video en la BD por id
+    public static int espacio(int id) {
         int espacio = 0;
         Connection conexion = ConexionBD.conectar();
 

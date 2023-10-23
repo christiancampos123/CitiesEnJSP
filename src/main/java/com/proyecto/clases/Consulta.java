@@ -76,7 +76,6 @@ public class Consulta implements InterfazGestion {
     }
 
     public void imprimirPaises(List<List<Object>> paises, PrintWriter out) {
-        out.println("<h1>HELLO WORLD<h1>");
         for (List<Object> pais : paises) {
             int id = (int) pais.get(0);
             String nombre = (String) pais.get(1);
@@ -145,8 +144,6 @@ public class Consulta implements InterfazGestion {
             // Realiza la consulta
             try {
                 Statement statement = conexion.createStatement();
-                //String consultaSQL = "SELECT * FROM Instalaciones";
-                //String consultaSQL = "SELECT i.id, c.nombre AS nombre_ciudad, i.nombre, i.revisado, i.borrar, i.tamaño, i.pendiente FROM Instalaciones i INNER JOIN Ciudades c ON i.id_ciudad = c.id";
                 String consultaSQL = "SELECT" + "    I.id AS id_instalacion," + "    I.nombre AS nombre_instalacion," + "    C.nombre AS nombre_ciudad," + "    P.nombre AS nombre_pais," + "    I.revisado," + "    I.borrar," + "    I.tamaño," + "    I.pendiente" + " FROM Instalaciones AS I" + " INNER JOIN Ciudades AS C ON I.id_ciudad = C.id" + " LEFT JOIN Países AS P ON C.id_país = P.id" + " ORDER BY id_instalacion ASC";  // ASC para orden ascendente
                 ResultSet resultado = statement.executeQuery(consultaSQL);
                 // Itera a través de los resultados y muestra los datos
@@ -170,7 +167,6 @@ public class Consulta implements InterfazGestion {
                     instalacion.add(pendiente);
                     instalaciones.add(instalacion);
                 }
-                //System.out.println(resultado.getString(1) +" \t "+ resultado.getString(2)+" \t "+resultado.getString(3)+" \t "+resultado.getString(4)+" \t "+resultado.getString(5)+" \t "+resultado.getString(6)+" \t "+resultado.getString(7));
             } catch (SQLException e) {
                 e.printStackTrace();
             }

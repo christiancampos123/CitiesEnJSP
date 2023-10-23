@@ -4,7 +4,7 @@
 <%@ page import="com.proyecto.clases.ConexionBD" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.io.PrintWriter" %>
-<%@ page import="java.util.ArrayList" %> <!-- Importa la clase ArrayList -->
+<%@ page import="java.util.ArrayList" %>
 
 
 
@@ -34,7 +34,7 @@
             }
 
             ul.navbar li a:hover {
-                background-color: #555; /* Cambiar el color de fondo al pasar el ratón por encima */
+                background-color: #555;
             }
         </style>
     </head>
@@ -59,7 +59,7 @@
 
 th,
 td {
-    padding-right: 60px; /* Ajusta el valor según tus necesidades */
+    padding-right: 60px;
 }
 
 </style>

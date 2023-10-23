@@ -4,7 +4,7 @@
 <%@ page import="com.proyecto.clases.ConexionBD" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.io.PrintWriter" %>
-<%@ page import="java.util.ArrayList" %> <!-- Importa la clase ArrayList -->
+<%@ page import="java.util.ArrayList" %>
 
 
 
@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 resultado -= espacioValue;
             }
 
-            espacioDiv.textContent = "Resultado: " + resultado;
+            espacioDiv.textContent = "Tamaño total: " + resultado;
         });
     });
 });
